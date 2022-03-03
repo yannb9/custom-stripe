@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors')
-const stripe = require('stripe')('sk_test_51K6VzPAWGQ3EzDjzI9SRRA8K6JQ81pKbi9eLJ6JxOcueTmyFh1nozS3fIK436eDgwUfFO2hyNI7suEa7vPcJe6jt00IGJHQTo6');
+const stripe = require('stripe')('pk_live_51K6VzPAWGQ3EzDjz7Dig0DziV3mvXdCzZ6HgWv8kD7jEvv2boDWb0fbLvoKmOP5kNZB673fyEf4xKndc07GA8AHL00ksRoylzq');
 const app = express();
 app.use(cors({
   origin: ['https://rebibolegal.ca','https://checkout.stripe.com']
@@ -10,8 +10,6 @@ app.use(express.json())
 let port = process.env.PORT || 8080;
 
 app.post('/create-checkout-session', async (req, res) => {
-  // console.log('starting')
-  console.log(req.body)
     try {
         const url = req.body.url;
         const amount = req.body.amount * 100;
