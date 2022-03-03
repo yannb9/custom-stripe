@@ -20,7 +20,7 @@ app.post('/create-checkout-session', async (req, res) => {
                   currency: 'usd',
                   product_data: {
                     name: 'Custom Payment',
-                    images:['https://rebibolegal.ca/wp-content/uploads/2022/03/payment.png']
+                    images:['https://rebibolegal.ca/wp-content/uploads/2022/03/payment-logo.png']
                   },
                   unit_amount: req.body.amount * 100,
                 },
