@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors')
-const stripe = require('stripe')('pk_live_51K6VzPAWGQ3EzDjz7Dig0DziV3mvXdCzZ6HgWv8kD7jEvv2boDWb0fbLvoKmOP5kNZB673fyEf4xKndc07GA8AHL00ksRoylzq');
+const stripe = require('stripe')('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');
 const app = express();
 app.use(cors({
   origin: ['https://rebibolegal.ca','https://checkout.stripe.com']
