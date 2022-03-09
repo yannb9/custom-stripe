@@ -1,0 +1,16 @@
+{
+  "name": "subdomains",
+  "version": "1.0.0",
+  "description": "creating subdomains",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js"
+  },
+  "author": "Yann Bohbot",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "express-subdomain": "^1.0.5"
+  }
+}
